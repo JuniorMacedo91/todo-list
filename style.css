@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.logo{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+#clock-pic{
+    width: 700px;
+}
+
+#updatePic{
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px ;
+    overflow: hidden;
+}
+
+#profilePic{
+    width: 250px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+#textName{
+    width: 250px;
+    margin: 2rem auto;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    outline: none;
+}
+
+::placeholder{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+button{
+    padding:.2rem 2.5rem;
+    font-size: 1.5rem;
+    border:2px solid #F9A11C;
+    border-radius: 2rem;
+    background-color: transparent;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+button:hover{
+    color: #fff;
+    background-color: #F9A11C;
+}
+#file{
+    display: none;
+}
+
+#btn-file{
+    position: absolute;
+    width: 200px;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 1px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    display: none;
+}
+
