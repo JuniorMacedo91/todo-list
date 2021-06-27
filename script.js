@@ -1,4 +1,3 @@
-
 var imgIcon = document.getElementById('updatePic');
 var image = document.getElementById('profilePic');
 var file = document.getElementById('file')
@@ -29,5 +28,4 @@ file.addEventListener('change', function(){
          showPic.readAsDataURL(photo)
     }
 })
-
 

@@ -1,33 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    text-align: center;
-}
 
-.display-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.home-container{
-    width: 100%;
-    min-height: 100vh;
-}
-
-h1{
-    position: absolute;
+#title{
+    font: 9.5rem 'Train One', cursive;
     text-transform: uppercase;
-    font-size: 10rem;
-    -webkit-box-reflect: below -70px linear-gradient(to bottom, transparent, transparent, transparent, rgba(255,255,255, 0.4));
+    letter-spacing: 1.2rem;
+    -webkit-box-reflect: below -70px linear-gradient(to bottom, transparent, transparent, rgba(255,255,255, 0.4));
+    animation: title 1s 2s ease-in-out  forwards;
+    opacity: 0;
 }
 
-.logo{
-    position: relative;
+#title span{
+    margin-left: -1rem;
 }
 
 #clock-pic{
@@ -36,7 +18,6 @@ h1{
 }
 
 #updatePic{
-    position: absolute;
     width: 250px;
     height: 250px;
     clip-path: circle();
@@ -47,12 +28,10 @@ h1{
 #profilePic{
     width: 100%;
     min-height: 100%;
-    display: grid;
-    place-items: center;
 }
 
 #btn-file{
-    position: absolute;
+    display: none;
     width: 100%;
     transform: translateX(-50%);
     bottom: 0;
@@ -60,7 +39,6 @@ h1{
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    display: none;
 }
 
 #textName{
@@ -71,7 +49,7 @@ h1{
     font-size: 1.5rem;
     text-transform: capitalize;
     outline: none;
-    animation: input 1s 2s forwards;
+    animation: input 1s 3s forwards;
     opacity: 0;
 }
 
@@ -83,47 +61,20 @@ h1{
 #btn-enter{
     padding:.2rem 2.5rem;
     font-size: 1.5rem;
-    border:2px solid #F9A11C;
+    border:2px solid var(--btn-color);
     border-radius: 2rem;
     background-color: transparent;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: 0.1s ease;
-    animation: input 1s 3s forwards;
+    animation: input 1s 4s forwards;
     opacity: 0;
 }
 
 #btn-enter:hover{
     color: #fff;
-    background-color: #F9A11C;
+    background-color: var(--btn-color);
 }
+
 #file{
     display: none;
-}
-
-
-@keyframes clock {
-   from{
-       opacity: 0;
-       transform: translateX(-100%);
-   }
-    
-    to{
-        transform: translateX(0%);
-    }
-}
-
-@keyframes picture {
-
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes input {
-
-    to{
-        transform: translateY(-100%);
-        opacity: 1;
-    }
 }
