@@ -1,12 +1,48 @@
+#title{
+    animation: title 1s 2s ease-in-out  forwards;
+    opacity: 0;     
+}
+
+@keyframes title {
+ 
+    0%{
+        transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(-30%);
+    }
+
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#clock-pic{
+    width: 700px;
+    animation: clock 2s .1s ease forwards;
+}
+
 @keyframes clock {
-    from{
+    0%{
         opacity: 0;
         transform: translateX(-100%);
     }
      
-     to{
-         transform: translateX(0%);
+     70%{
+         transform: rotate(-15deg);
      }
+
+     100%{
+         transform: rotate(0)
+     }
+
+ }
+
+ #updatePic{
+    animation: picture 1s 2s forwards;
+    opacity: 0;
  }
  
  @keyframes picture {
@@ -15,6 +51,16 @@
          opacity: 1;
      }
  }
+
+ #textName{
+    animation: input 1s 3s forwards;
+    opacity: 0;
+ }
+
+ #btn-enter{
+    animation: input 1s 4s forwards;
+    opacity: 0;
+}
  
  @keyframes input {
  
@@ -24,18 +70,4 @@
      }
  }
  
- @keyframes title {
  
-     0%{
-         transform: translateY(0%);
-     }
- 
-     50%{
-         transform: translateY(-30%);
-     }
- 
-     100%{
-         transform: translateY(0%);
-         opacity: 1;
-     }
- }

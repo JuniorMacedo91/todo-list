@@ -1,29 +1,15 @@
-
 /*Home*/
 #title{
     font: 9.5rem 'Train One', cursive;
     text-transform: uppercase;
     letter-spacing: 1.2rem;
     -webkit-box-reflect: below -70px linear-gradient(to bottom, transparent, transparent, rgba(255,255,255, 0.4));
-    animation: title 1s 2s ease-in-out  forwards;
-    opacity: 0;
-}
-
-#title span{
-    margin-left: -1rem;
-}
-
-#clock-pic{
-    width: 700px;
-    animation: clock 2s .1s ease forwards;
 }
 
 #updatePic{
     width: 250px;
     height: 250px;
     clip-path: circle();
-    animation: picture 1s 2s forwards;
-    opacity: 0;
 }
 
 #profilePic{
@@ -32,26 +18,19 @@
 }
 
 #btn-file{
-    display: none;
     width: 100%;
     transform: translateX(-50%);
     bottom: 0;
     padding: 1rem;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
+    color: var(--white);
+    background-color: var(--shadow);
 }
 
 #textName{
-    width: 250px;
+    width: 260px;
     margin: 2rem auto;
-    border: none;
     border-bottom: 1px solid black;
     font-size: 1.5rem;
-    text-transform: capitalize;
-    outline: none;
-    animation: input 1s 3s forwards;
-    opacity: 0;
 }
 
 ::placeholder{
@@ -62,22 +41,16 @@
 #btn-enter{
     padding:.2rem 2.5rem;
     font-size: 1.5rem;
-    border:2px solid var(--btn-color);
+    border:2px solid var(--yellow);
     border-radius: 2rem;
     background-color: transparent;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    animation: input 1s 4s forwards;
-    opacity: 0;
+    box-shadow: 0px 5px 5px var(--shadow);
 }
 
 #btn-enter:hover{
     color: #fff;
-    background-color: var(--btn-color);
-}
-
-#file{
-    display: none;
+    border:2px solid var(--pink);
+    background-color: var(--pink);
 }
 
 /*Main Page*/
@@ -86,12 +59,11 @@
     position: relative;
     width: 300px;
     height: 300px;
-    border:2px solid var(--btn-color);
-    box-shadow: 0px 0px 10px var(--btn-color);
+    border:1px solid var(--yellow);
+    box-shadow: 0px 0px 10px var(--yellow);
     display: grid;
     place-content: center;
     border-radius: 50%;
-    margin: auto;
 }
 
 #profilePhoto{
@@ -100,29 +72,53 @@
 }
 
 .icon{
-    position: absolute;
+    position: relative;
     width: 3rem;
     border-radius: 50%;
-    box-shadow: 0px 2px 5px  rgba(0, 0, 0, 0.653);
     transition: .4s;
 }
 
 .linkedin-icon{
-    bottom: 20px;
-    left: 10px;
+    bottom: 70px;
+    left: -70px;
 }
 
 .github-icon{
-    bottom: -15px;
-    left: 60px;
+    bottom: 2rem;
+    left: -70px;
 }
 
 .instagram-icon{
-    bottom: -30px;
-    left: 120px;
+    bottom: 15px;
+    left: -55px;
 }
 
 .icon:hover{
     transform: translateY(-10px);
+}
+
+#listContent{
+    margin: 2rem 4rem;
+    display: flex;
+}
+
+#input-List, #time{
+    padding: 5px;
+    font-size: 1.8rem;
+    border-radius: 1.5rem;
+}
+
+#btn-add > img{
+    width: 3rem;
+}
+
+li{
+    margin: 0 10px;
+    padding: 1rem;
+    background-color: var(--pink);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0px 2px 5px  var(--shadow);
+    transition: .1s
 }
 
