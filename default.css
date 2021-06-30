@@ -13,20 +13,13 @@
     --purple: #783aed;
 }
 
-.home-container{
-    background-color: black;
-}
-
 .home-box{
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-.home-box{
-    width: 100%;
-    height: 100vh;
 }
 
 .home-content{
