@@ -5,80 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do List</title>
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="keyframe.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="default.css">
 </head>
 <body>
-    <div id="home-container" >
-        <div id="home-content">
-
-            <h1 id="title">To do <span>List</span></h1>
-
-            <div id="logo">
-                <img id="clock-pic" src="./assets/clock.png" alt="alarm clock picture">
+    <div class="home-container">
+        <div class="home-box">
+            <div class="home-content">
+                <form>
+                    <img id="profile-photo" src="./assets/profile-icon.jpg" alt="Icon profile picture">
+                    <input type="text" name="name-input" id="name-input" placeholder="Digite seu nome" required>
+                    <button id="btn-Enter">To do List</button>
+                </form>
             </div>
-
-            <div id="updatePic">
-                <img id="profilePic" src="./assets/profile-icon.jpg" alt="profile icon">
-                <input type="file" name="file" id="file">
-                <label for="file" id="btn-file">Insira uma foto</label>
+            <div class="picture-box">
+                <img id="home-picture" src="./assets/home-picture.svg" alt="Home picture">
             </div>
-
-            <form>
-                <input type="text" name="textName" id="textName" placeholder="Digite seu nome" required>
-                <button id="btn-enter">Entrar</button>
-            </form>
         </div>
     </div>
-    <main>
-        <div id="mainContainter">
-            <div id="mainContent">
-                <header>
-                    <h2 id="date" style="font-size: 1.2rem"></h2>
-                    <h2 id="greetings" style="font-size: 2.5rem">Olá, Junior! O que temos pra hoje?</h2>
-                </header>
-                <section>
-
-                    <div id="pictureContent">
-                        <div class="photoDiv">
-                            <img id="profilePhoto" src="./assets/me.jpg" alt="">
-                        </div>
-            
-                        <div id="icons">
-                            <a href=""><img class="icon linkedin-icon" src="./assets/linkedin.png" alt="Linkedin icon"></a>
-                            <a href=""><img class="icon github-icon" src="./assets/github.png" alt="Github icon"></a>
-                            <a href=""><img class="icon instagram-icon" src="./assets/instagram.png" alt="Instagram Icon"></a>
-                        </div>
-                    </div>
-
-                    <div id="listContent">
-        
-                       <input type="text" name="input-List" id="input-List" placeholder="Digite uma tarefa" required>
-                       <input type="time" name="time" id="time">
-                       <button id="btn-add"><img src="./assets/checked.png" alt=""></button>
-                        
-                    </div>
-                </section>
-                <section id="weekList">
-
-                    <ul>
-                        <a href=""><li>D</li></a>
-                        <a href=""><li>S</li></a>
-                        <a href=""><li>T</li></a>
-                        <a href=""><li>Q</li></a>
-                        <a href=""><li>Q</li></a>
-                        <a href=""><li>S</li></a>-
-                        <a href=""><li>S</li></a>
-                    </ul>
-        
-                    <button id="btn-delete"><img src="./assets/trash.png" alt=""></button>
-                </section>
-            </div>
-        </div>
-    </main>
 </body>
-    <script src="script.js"></script>
 </html>
