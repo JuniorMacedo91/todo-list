@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <div class="home-container" style="display: none;">
+    <div class="home-container">
         <div class="home-box">
             <div class="home-content">
                 <form>
@@ -29,33 +29,44 @@
         </div>
     </div>
     <main>
-        <section id="date-and-picture-box">
-            <header id="date-box">
-                <h2 id="date">Hoje</h2>
-            </header>
-            <div id="profile-photo-box">
-                <img src="./assets/eu.jpg" alt="" width="150px">
-            </div>
-            <div id="icons">
-                <ul>
-                    <a href=""><li><img class="icon github" src="./assets/github.png" alt="github icon"></li></a>
-                    <a href=""><li><img class="icon linkedin" src="./assets/linkedin.png" alt="linkedin icon"></li></a>
-                    <a href=""><li><img class="icon instagram" src="./assets/instagram.png" alt="intagram icon"></li></a>
-                </ul>
-            </div>
-        </section>
-        <section id="input-and-list-box">
-            <header>
-                <h1 id="greetings">Olá, Junior! O que temos pra hoje?</h1>
-            </header>
-            <div id="input-text-box">
-                <input type="text" name="" id="" placeholder="Digite uma tarefa" required>
-                <button>Check</button>
-            </div>
-            <ul id="list-box">
-                <li id="list-item">Adicionar tarefa</li>
-            </ul>
-        </section>
+        <div id="main-container">
+            <img id="home-pic" src="./assets/home-picture.svg" alt="Home picture">
+            <section id="date-and-picture-section">
+                <header id="date-box">
+                    <h1 id="date"></h2>
+                </header>
+                <div id="profile-photo-box">
+                    <div id="image-box">
+                        <img id="section-photo" src="./assets/eu.jpg" alt="" width="150px">
+                    </div>
+                    <ul id="icon-list">
+                        <a href=""><li><img class="icon github" src="./assets/github.png" alt="github icon"></li></a>
+                        <a href=""><li><img class="icon linkedin" src="./assets/linkedin.png" alt="linkedin icon"></li></a>
+                        <a href=""><li><img class="icon instagram" src="./assets/instagram.png" alt="intagram icon"></li></a>
+                    </ul>
+                </div>
+            </section>
+            <section id="input-and-list-section">
+                <div id="input-and-list-container">
+                    <header>
+                        <h1 id="greetings">Olá, Junior! O que temos pra hoje?</h1>
+                    </header>
+                    <div id="input-text-box">
+                        <input type="text" name="input-addItem" id="input-addItem" placeholder="Digite uma tarefa" required>
+                        <input type="time" name="timeAdd" id="timeAdd">
+                        <button id="btn-check"><img src="./assets/check.png" alt=""></button>
+                    </div>
+                    <ul id="list-box">
+                        <li id="list-item">Adicionar tarefa </li>
+                        <li id="list-item">Adicionar tarefa</li>
+                        <li id="list-item">Adicionar tarefa</li>
+                        <li id="list-item">Adicionar tarefa</li>
+                        <li id="list-item">Adicionar tarefa</li>
+                    </ul>
+                </div>
+                <button><img id="btn-delete" src="./assets/garbage.png" alt="trash icon"></button>
+            </section>
+        </div>
     </main>
 </body>
 <script src="script.js"></script>
