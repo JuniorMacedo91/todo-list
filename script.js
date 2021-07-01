@@ -1,48 +1,61 @@
-let imgIcon = document.getElementById('updatePic');
-let image = document.getElementById('profilePic');
-let file = document.getElementById('file')
-let btnFile = document.getElementById('btn-file');
-let nome = document.getElementById('textName')
-let resultado = document.getElementById('nome')
-let enter = document.getElementById('btn-enter')
+// Show and hide Upload button
+let photo = document.getElementById('photo-container');
+let btnchoosePic = document.getElementById('choose-photo')
 
-
-//Show file button
-imgIcon.addEventListener('mouseenter', function () {
-    btnFile.style.display = 'inline'
+photo.addEventListener('mouseenter', function(){
+    btnchoosePic.style.display='block'
 })
 
-//Hide file button
-imgIcon.addEventListener('mouseleave', function () {
-    btnFile.style.display = 'none'
+photo.addEventListener('mouseleave', function(){
+    btnchoosePic.style.display='none'
 })
 
 //Upload photo
+let picture = document.getElementById('profile-photo')
+let file = document.getElementById('btn-addFile')
+
 file.addEventListener('change', function(){
-    let photo = this.files[0]
+    let pic = this.files[0]
 
-    if(photo){
-         let showPic = new FileReader()
+    if (pic){
+        let reader = new FileReader();
 
-         showPic.addEventListener('load', function(){
-            image.setAttribute('src', showPic.result)
-         })
-         
-         showPic.readAsDataURL(photo)
+        reader.addEventListener('load', function(){
+            picture.setAttribute('src', reader.result)
+        })
+
+        reader.readAsDataURL(pic)
     }
 })
 
-//Get Datetime
+//Get date
+let nowDate = document.getElementById('date')
 
-let daytime = new Date()
-let weekDay = daytime.getDay()
-let day = daytime.getDate()
-let month = daytime.getMonth()
-let year = daytime.getFullYear()
+let date = new Date()
+let week = date.getDay()
+let day = date.getDate()
+let month = date.getMonth()
+let year = date.getFullYear()
 
-let months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+let weeks = ['Doming','Segunda - Feira','Terça - Feira','Quarta - Feira','Quinta - Feira','Sexta - Feira','Sábado']
+let months = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
 
-let week = ['Domingo', 'Segunda - Feira', 'Terça - Feira', 'Quarta - Feira', 'Quinta - Feira', 'Sexta - Feira', 'Sábado']
+nowDate.innerHTML = `${weeks[week]}, ${day} de ${months[month]} de ${year}`
 
-document.getElementById('date').innerHTML = `${week[weekDay]} , ${day} de ${months[month]} de ${year}`
+//Dark mode
+let darkMode = document.getElementById('btn-darkmode-moon')
+let lightMode = document.getElementById('btn-darkmode-sun')
+let background = document.body
+
+darkMode.addEventListener('click', function(){
+    darkMode.style.display="none";
+    lightMode.style.display="block";
+    background.style.backgroundColor = "#000011";
+})
+
+lightMode.addEventListener('click', function(){
+    darkMode.style.display="block"
+    lightMode.style.display="none"
+    background.style.backgroundColor = "#fff";
+})
 
