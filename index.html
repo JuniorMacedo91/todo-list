@@ -5,66 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do List</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="default.css">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/default.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/mediaquerie.css">
 </head>
 <body>
-    <div class="home-container">
-        <div class="home-box">
+    <div id="home-container" >
+        <div class="home-wrapper">
             <div class="home-content">
-                <form>
-                    <div id="photo-container">
-                        <img id="profile-photo" src="./assets/profile-icon.jpg" alt="Icon profile picture">
+                <img id="btnDarkMode" src="./assets/moon.png" alt="" >
+                    <form >
+                    <div id="photo-wrapper">
+                        <img id="profile-photo" src="./assets/profile-icon.jpg" alt="Icon profile picture" >
                         <label id="choose-photo" for="btn-addFile">Insira uma foto</label>
-                        <input type="file" name="btn-addFile" id="btn-addFile">
+                        <input type="file" name="btn-addFile" id="btn-addFile" style="display: none;">
                     </div>
-                    <input type="text" name="name-input" id="name-input" placeholder="Digite seu nome" required>
-                    <button id="btn-Enter">To do List</button>
+
+                    <input type="text" name="name-input" id="name-input" placeholder="Digite seu nome" required >
+                    <button id="btn-Enter" onclick="getName()" >To do List</button>
                 </form>
-            </div>
-            <div class="picture-box">
-                <img id="home-picture" src="./assets/home-picture.svg" alt="Home picture">
             </div>
         </div>
     </div>
     <main>
         <div id="main-container">
-            <img id="home-pic" src="./assets/home-picture.svg" alt="Home picture">
             <section id="date-and-picture-section">
                 <header id="date-box">
                     <h1 id="date"></h2>
                 </header>
+
                 <div id="profile-photo-box">
-                    <div id="image-box">
-                        <img id="section-photo" src="./assets/eu.jpg" alt="" width="150px">
+                    <div id="image-wrapper">
+                        <img id="wrapper-profilePhoto" src="./assets/profile-icon.jpg" alt="">
                     </div>
-                    <ul id="icon-list">
-                        <a href=""><li><img class="icon github" src="./assets/github.png" alt="github icon"></li></a>
-                        <a href=""><li><img class="icon linkedin" src="./assets/linkedin.png" alt="linkedin icon"></li></a>
-                        <a href=""><li><img class="icon instagram" src="./assets/instagram.png" alt="intagram icon"></li></a>
-                    </ul>
+
+                    <div id="icon-list">
+                        <a href="https://github.com/JuniorMacedo91" target="_blank"><img class="icon github btn-effect" src="./assets/github.png" alt="github icon"></a>
+                        <a href="https://www.linkedin.com/in/osmar-m/" target="_blank"><img class="icon linkedin btn-effect" src="./assets/linkedin.png" alt="linkedin icon"></a>
+                    </div>
                 </div>
             </section>
-            <section id="input-and-list-section">
-                <div id="input-and-list-container">
+            <section id="list-section">
+                <div id="list-container">
                     <header>
-                        <h1 id="greetings">Olá, Junior! O que temos pra hoje?</h1>
+                        <h1 >Olá, <span id="textInput"></span>! <br> O que temos pra hoje?</h1>
                     </header>
-                    <div id="input-text-box">
-                        <input type="text" name="input-addItem" id="input-addItem" placeholder="Digite uma tarefa" required>
-                        <input type="time" name="timeAdd" id="timeAdd">
-                        <button id="btn-check"><img src="./assets/check.png" alt=""></button>
+
+                    <div id="input-text-box" >
+                        <input type="text" name="input-addItem" id="input-addItem"  placeholder="Digite uma tarefa" required>
+                        <input type="time" name="timeAdd" id="timeAdd" required>
+                        <button id="btn-check" class="btn-effect"><img src="./assets/check.png" alt="check button" ></button>
                     </div>
-                    <ul id="list-box">
-                        <li id="list-item">Adicionar tarefa </li>
-                        <li id="list-item">Adicionar tarefa</li>
-                        <li id="list-item">Adicionar tarefa</li>
-                        <li id="list-item">Adicionar tarefa</li>
-                        <li id="list-item">Adicionar tarefa</li>
+
+                    <ul id="taskBox" >
                     </ul>
+                    
                 </div>
-                <button><img id="btn-delete" src="./assets/garbage.png" alt="trash icon"></button>
             </section>
         </div>
     </main>
