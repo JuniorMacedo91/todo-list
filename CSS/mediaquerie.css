@@ -1,0 +1,102 @@
+@media screen and (max-width:768px) {
+    #home-container{
+        background-size: 650px;
+    }
+
+    .home-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main::before{
+        width: 80%;
+        height: 100%;
+        clip-path: circle(70% at right);
+    }
+}
+
+@media screen and (max-width:420px) {
+    #home-container{
+        background-size: 300px;
+    }
+
+    form{
+        width: 100%;
+        height: 490px;
+    }
+
+    #main-container{
+        display:block;
+        background-image: none;
+        padding:0;
+    }
+
+    main::before{
+        width: 100%;
+        height: 100%;
+        clip-path: circle(90% at bottom);
+    }
+
+    #list-container h1{
+        font-size: 1.3rem;
+    }
+
+    #date{
+        font-size: 1rem;
+    }
+
+    #btn-check img{
+        width: 30px;
+    }
+
+    #taskBox{
+        width: 100%;
+        margin: 0;
+        max-height:250px;
+        overflow-y: auto;
+    }
+
+    #taskBox li{
+        width: 90%;
+        margin:10px 0px;
+        padding: 5px 10px;
+    }
+
+    #list-container input{
+        font-size: 14px;
+        padding: 3px;
+        margin: 0px 6px;
+    }
+
+    #list-container{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    #wrapper-profilePhoto{
+        width: 160px;
+    }
+    
+    #image-wrapper{
+        width: 180px;
+        height:180px;
+    }
+
+    .icon{
+        width: 2rem;
+        position: relative;
+    }
+
+    .github{
+        bottom: 0;
+        left: 0;
+    }
+    
+    .linkedin{
+        bottom: 0;
+        left: 0;
+    }
+    
+}
