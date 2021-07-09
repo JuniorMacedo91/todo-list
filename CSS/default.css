@@ -25,6 +25,7 @@ body{
 }
 
 #home-container{
+    height: 100vh;
     background: url(../assets/home-picture.svg) no-repeat bottom;
     background-size: 700px;
 }

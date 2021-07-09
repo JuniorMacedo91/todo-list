@@ -120,7 +120,7 @@ form{
 #list-container input{
     font-size: 1.5rem;
     padding: 5px;
-    margin:1rem 10px;
+    margin:1rem 5px;
     border-radius: 20px;
     color: black;
     text-transform: capitalize;
@@ -157,7 +157,7 @@ form{
     cursor: pointer;
 }
 
-button > img{
+button  img{
     width: 1.2rem;
 }
 
