@@ -39,21 +39,20 @@
 }
 
 form{
-    position: relative;
     display: grid;
     place-items: center;
     width: 300px;
     height: 400px;
-    margin-top: 2rem;
+    margin-top: 5rem;
     border-radius: 1rem;
     background-image: linear-gradient(to bottom, var(--purple), transparent);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 10px 50px var(--glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 #name-input{
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding:5px;
     text-transform: capitalize;
     background-color:transparent;
@@ -68,7 +67,7 @@ form{
 }
 
 #btn-Enter{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding:5px 20px;
     color: var(--purple);
     border-radius: 20px;
@@ -103,37 +102,15 @@ form{
     border:2px solid var(--purple);
 }
 
-h1{
-    margin-bottom: 1rem;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-
 #date{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+    border-radius: 20px;
     background-color: var(--purple);
 }
 
-.github{
-    bottom: 15rem;
-    left: 3rem;
-}
-
-.linkedin{
-    bottom: 12.5rem;
-    left: 6rem;
-}
-
-.icon{
-    width: 4rem;
-    position: absolute;
-}
-
 /*List section style*/
-#list-section{
-    margin-right: 4rem;
-}
-
 #list-container h1{
     font-size: 3rem;
     text-transform: capitalize;
@@ -150,6 +127,7 @@ h1{
 }
 
 #taskBox{
+    position: relative;
     margin: 1rem;
     max-height:300px;
     overflow-y: auto;
