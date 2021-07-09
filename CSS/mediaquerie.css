@@ -72,6 +72,7 @@
         width: 2rem;
     }
     #home-container{
+        height: none;
         background-size: 300px;
     }
 
@@ -84,7 +85,6 @@
         display:block;
         background-image: none;
         padding:1rem;
-        height: none;
     }
 
     main::before{
