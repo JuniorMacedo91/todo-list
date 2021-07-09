@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./CSS/mediaquerie.css">
 </head>
 <body>
-    <div id="home-container" >
+    <div id="home-container" style="display: none;">
         <div class="home-content">
             <img id="btnDarkMode" src="./assets/moon.png" alt="" >
 
@@ -52,9 +52,9 @@
                         <input type="time" name="timeAdd" id="timeAdd" required>
                         <button id="btn-check" class="btn-effect"><img src="./assets/check.png" alt="check button" ></button>
                     </div>
-
-                    <ul id="taskBox" ></ul>
-                    
+                    <div id="taskWrapper">
+                        <ul id="taskBox" ></ul>
+                    </div>
                 </div>
             </section>
         </div>
