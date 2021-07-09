@@ -38,9 +38,9 @@ body{
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding:2rem;
-    background:url(../assets/home-picture.svg) no-repeat bottom left 12rem;
-    background-size: 600px;
+    max-width: 85%;
+    margin: auto;
+    padding: 2rem 0px;
 }
 
 main::before{
@@ -51,19 +51,6 @@ main::before{
     right: 0;
     clip-path: circle(90% at right 30%);
     background-color: var(--purple);
-}
-
-section{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#list-container{
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 600px;
 }
 
 button{
