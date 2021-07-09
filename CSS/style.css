@@ -87,6 +87,10 @@ form{
 /*Main style*/
 
 /*date and picture section style*/
+
+#main-container{
+    height: 100vh;
+}
 #wrapper-profilePhoto{
     position: relative;
     width: 300px;
