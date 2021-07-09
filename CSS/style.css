@@ -104,8 +104,8 @@ form{
 }
 
 #date{
-    font-size: 1rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
     padding: 5px;
     border-radius: 20px;
     background-color: var(--purple);
@@ -144,7 +144,7 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin:10px;
     padding: 7px;
     background-color: var(--glass);
