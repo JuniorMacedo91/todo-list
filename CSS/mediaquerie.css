@@ -15,7 +15,7 @@
 
     #main-container{
         width: 100%;
-        height: 0;
+        height: 0px;
         display: grid;
         justify-content: center;
         background-image: none;
@@ -80,7 +80,7 @@
 
     #main-container{
         display:grid;
-        height: 100%;
+        height: none;
         background-image: none;
         padding:1rem;
     }
@@ -125,13 +125,13 @@
     #taskBox{
         display: grid;
         place-items: center;
-        width: 90%;
+        width: 350px;
         max-height: 250px;
         margin:0;
     }
 
     #taskBox li{
-        width: 100%;
+        font-size: 12px;
         margin:5px 0px;
         padding: 5px 10px;
     }
