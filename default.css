@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    text-align: center;
+    border:none;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+:root{
+    --purple: #783aed;
+    --glass: rgb(0, 0, 0, 0.3);
+}
+
+body{
+    width: 100%;
+    transition: .3s;
+}
+
+#home-container{
+    background: url(../assets/home-picture.svg) no-repeat bottom;
+    background-size: 700px;
+}
+
+.home-content,#input-text-box, #image-wrapper,#wrapper-profilePhoto, .home-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#main-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: auto;
+    padding: 2rem 0px;
+}
+
+main::before{
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    right: 0;
+    clip-path: circle(90% at right 30%);
+    background-color: var(--purple);
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
