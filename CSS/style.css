@@ -89,7 +89,7 @@ form{
 /*date and picture section style*/
 
 #main-container{
-    height: 100vh;
+    height: 100VH;
 }
 #wrapper-profilePhoto{
     position: relative;
