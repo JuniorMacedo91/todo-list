@@ -1,5 +1,5 @@
 /*Home style*/
-#btnDarkMode{
+#dark-mode-label img{
     position: absolute;
     width: 3rem;
     right: 30px;
@@ -11,15 +11,20 @@
     background-color: #000015;
 }
 
+html{
+    transition: ease-in .3s;
+}
+
 #photo-wrapper{
     position: relative;
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     box-shadow: 0px 0px 10px black;
     overflow: hidden;
     cursor: pointer;
+    border: 4px solid white;
 }
 
 #profile-photo{
