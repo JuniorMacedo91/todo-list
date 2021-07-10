@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/default.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/mediaquerie.css">
+  </head>
+<body>
+    <main >
+        <div id="main-container">
+            <section id="date-and-picture-section">
+                <header id="date-box">
+                    <a href="./index.html"><img id="home-icon" src="./assets/home.png" alt="home icon"></a>
+                    <p id="date"></p>
+                </header>
+
+                <div id="profile-photo-box">
+                    <div id="image-wrapper">
+                        <img id="wrapper-profilePhoto" src="./assets/profile-icon.jpg" alt="" >
+                    </div>
+                </div>
+            </section>
+            <section id="list-section">
+                <div id="list-container">
+                    <header>
+                        <h1 >Olá, <span id="textInput"></span>! <br> O que temos pra hoje?</h1>
+                    </header>
+
+                    <div id="input-text-box">
+                        <input type="text" name="input-addItem" id="input-addItem"  placeholder="Digite uma tarefa" required>
+                        <input type="time" name="timeAdd" id="timeAdd" required>
+                        <button id="btn-check" class="btn-effect"><img src="./assets/check.png" alt="check button" ></button>
+                    </div>
+                    <div id="taskWrapper">
+                        <ul id="taskBox" ></ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+    <script>
+    document.getElementById('textInput').innerHTML = localStorage.inputText;
+    document.addEventListener('DOMContentLoaded', setPhoto);
+    function setPhoto(){
+    let newImage = localStorage.getItem('image')
+    if(newImage){
+        document.getElementById('wrapper-profilePhoto').setAttribute('src', newImage)
+        } 
+    }
+   </script>
+    <script src="./app/home.js"></script>
+    <script src="./app/todolist.js"></script> 
+</html>

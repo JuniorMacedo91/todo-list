@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="./CSS/mediaquerie.css">
 </head>
 <body>
-    <div id="home-container">
+    <div id="home-container" >
         <div class="home-content">
-            <img id="btnDarkMode" src="./assets/moon.png" alt="" >
+            <img id="btnDarkMode" src="./assets/moon.png" alt="">
 
-            <form >
+            <form action="./todolist.html" method="GET" >
                 <div id="photo-wrapper">
                     <img id="profile-photo" src="./assets/profile-icon.jpg" alt="Icon profile picture" >
                     <label id="choose-photo" for="btn-addFile">Insira uma foto</label>
@@ -28,37 +28,7 @@
             
         </div>
     </div>
-    <main>
-        <div id="main-container">
-            <section id="date-and-picture-section">
-                <header id="date-box">
-                    <h1 id="date"></h2>
-                </header>
-
-                <div id="profile-photo-box">
-                    <div id="image-wrapper">
-                        <img id="wrapper-profilePhoto" src="./assets/profile-icon.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-            <section id="list-section">
-                <div id="list-container">
-                    <header>
-                        <h1 >Olá, <span id="textInput"></span>! <br> O que temos pra hoje?</h1>
-                    </header>
-
-                    <div id="input-text-box">
-                        <input type="text" name="input-addItem" id="input-addItem"  placeholder="Digite uma tarefa" required>
-                        <input type="time" name="timeAdd" id="timeAdd" required>
-                        <button id="btn-check" class="btn-effect"><img src="./assets/check.png" alt="check button" ></button>
-                    </div>
-                    <div id="taskWrapper">
-                        <ul id="taskBox" ></ul>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
 </body>
-<script src="script.js"></script>
+    <script src="./app/home.js"></script>
+    <script src="./app/todolist.js"></script> 
 </html>
