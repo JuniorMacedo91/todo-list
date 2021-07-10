@@ -45,9 +45,9 @@
     </main>
 </body>
     <script>
-    document.getElementById('textInput').innerHTML = localStorage.inputText;
-    document.getElementById('wrapper-profilePhoto').setAttribute('src', localStorage.getItem('image'))
-    document.documentElement = localStorage.getItem('setDarkMode')
+        document.getElementById('textInput').innerText = localStorage.inputText;
+        document.getElementById('wrapper-profilePhoto').setAttribute('src', localStorage.getItem('image'))
+        document.documentElement = localStorage.getItem('setDarkMode')
     </script>
     <script src="./app/home.js"></script>
     <script src="./app/todolist.js"></script> 
