@@ -17,7 +17,7 @@
                 <header id="date-box">
                     <a href="./index.html"><img id="home-icon" src="./assets/home.png" alt="home icon"></a>
                     <p id="date"></p>
-                </header>
+                  </header>
 
                 <div id="profile-photo-box">
                     <div id="image-wrapper">
@@ -46,14 +46,9 @@
 </body>
     <script>
     document.getElementById('textInput').innerHTML = localStorage.inputText;
-    document.addEventListener('DOMContentLoaded', setPhoto);
-    function setPhoto(){
-    let newImage = localStorage.getItem('image')
-    if(newImage){
-        document.getElementById('wrapper-profilePhoto').setAttribute('src', newImage)
-        } 
-    }
-   </script>
+    document.getElementById('wrapper-profilePhoto').setAttribute('src', localStorage.getItem('image'))
+    document.documentElement = localStorage.getItem('setDarkMode')
+    </script>
     <script src="./app/home.js"></script>
     <script src="./app/todolist.js"></script> 
 </html>
