@@ -8,7 +8,7 @@
 }
 
 .dark{
-    background-color: #000011;
+    background-color: #000015;
 }
 
 #photo-wrapper{
@@ -88,6 +88,17 @@ form{
 
 /*date and picture section style*/
 
+#date-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+#home-icon{
+    width: 40px;
+}
+
 #wrapper-profilePhoto{
     position: relative;
     width: 300px;
@@ -104,7 +115,6 @@ form{
 }
 
 #date{
-    margin-bottom: 1rem;
     font-size: 1rem;
     padding: 5px;
     border-radius: 20px;
@@ -118,7 +128,7 @@ form{
 }
 
 #list-container input{
-    font-size: 2vw;
+    font-size: 1.5rem;
     padding: 5px;
     margin:1rem 5px;
     border-radius: 20px;
@@ -146,7 +156,7 @@ form{
     align-items: center;
     width: 90%;
     margin:10px;
-    padding: 7px;
+    padding: 10px;
     background-color: var(--glass);
     border-radius: 20px;
     cursor: pointer;

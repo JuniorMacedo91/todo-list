@@ -21,7 +21,7 @@
 
 body{
     width: 100%;
-    transition: .3s;
+    transition: ease-in .3s;
 }
 
 #home-container{
