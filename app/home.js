@@ -41,8 +41,6 @@ function setPhoto(){
 
 
 //Get name
-document.getElementById('name-input').value = localStorage.inputText;
-
 function getName(){
     let name = document.getElementById('name-input').value
     localStorage.setItem('inputText', name)
