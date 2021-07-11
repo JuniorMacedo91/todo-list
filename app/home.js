@@ -35,10 +35,8 @@ function setPhoto(){
     let newImage = localStorage.getItem('image')
     if(newImage){
         document.getElementById('profile-photo').setAttribute('src', newImage)
-        document.getElementById('wrapper-profilePhoto').setAttribute('src', newImage)
     } 
 }
-
 
 //Get name
 function getName(){
@@ -47,26 +45,25 @@ function getName(){
 }
 
 //---------------------------------------DarkMode
-const btnDarkMode = document.getElementById('btnDarkMode')
-const body = document.querySelector('body')
+const setDarkMode = localStorage.setDarkMode
+const btnDarkMode = document.getElementById('btnDarkMode');
 
-const darkMode = () =>{
-    body.classList.toggle('dark')
+btnDarkMode.addEventListener('click', () => {
+    document.documentElement.classList.toggle('btnDarkMode')
+})
+
+if(setDarkMode){
+    document.documentElement.classList.add('dark')
+    btnDarkMode.checked = true
 }
 
 btnDarkMode.addEventListener('click', () =>{
-    let setDark = localStorage.getItem('dark')
+    document.documentElement.classList.toggle('dark')
 
-    if(setDark !== 'on'){
-        darkMode();
-        setDark = localStorage.setItem('dark', 'on')
-    } else {
-        darkMode()
-        setDark = localStorage.setItem('dark', null)
+    if(document.documentElement.classList.contains('dark')){
+        localStorage.setItem('setDarkMode', true)
+        return
     }
-});
+    localStorage.removeItem('setDarkMode')
+})
 
-let setDark = localStorage.dark;
-if(setDark === 'on'){
-    darkMode()
-}
