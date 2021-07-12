@@ -22,7 +22,7 @@ Como adendo, criei uma função dark mode. E para atualizar em todas as páginas
 
 ## Principais desafios:
 
-- Compreender melhor o conceito de function;
+- Compreender melhor a lógica de function;
 - Identificar um valor especifico em um array;
 - Resgatar e aplicar os valores de localStorage como, foto e nome, em outra página;
 - Entender e criar a lógica para aplicar dark mode em diversas páginas;
