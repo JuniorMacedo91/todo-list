@@ -18,6 +18,8 @@ Para esse projeto, foram utilizados as ferramentas abaixo, como forma de entende
 - [x] Function - Cria um objeto function para uma determinada atividade;
 - [x] Arrays - Objeto para criação de vetores, onde armazenamos diversos valores e resgatamos de acordo com a necessidade;
 
+Como adendo, criei uma função dark mode. E para atualizar em todas as páginas, usei o setAttribute.
+
 ## Projeto:
 
 <p align="center">
