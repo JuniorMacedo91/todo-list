@@ -20,6 +20,9 @@ let list = document.getElementById('taskBox')
 
 document.addEventListener('DOMContentLoaded', getTasks)
 addItem.addEventListener('click', addTask)
+document.getElementById('textInput').innerText = localStorage.inputText;
+document.documentElement.setAttribute('class',localStorage.getItem('setDarkMode'))
+document.getElementById('wrapper-profilePhoto').setAttribute('src', localStorage.getItem('image'))
 
 function creat_id(){
     return Math.random()*999;

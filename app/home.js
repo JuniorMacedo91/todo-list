@@ -61,9 +61,8 @@ btnDarkMode.addEventListener('click', () =>{
     document.documentElement.classList.toggle('dark')
 
     if(document.documentElement.classList.contains('dark')){
-        localStorage.setItem('setDarkMode', true)
+        localStorage.setItem('setDarkMode', 'dark')
         return
     }
     localStorage.removeItem('setDarkMode')
 })
-
