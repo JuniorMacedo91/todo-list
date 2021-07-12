@@ -23,7 +23,7 @@ Como adendo, criei uma função dark mode. E para atualizar em todas as páginas
 ## Projeto:
 
 <p align="center">
-  <img src="jura.gif" width="300px">
+  <img src="todolist.gif" width="500px">
 </p>
 
 ## Tecnologias:
