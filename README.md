@@ -1,6 +1,9 @@
 # todo-list
 Criação de uma To do List. Projeto desenvolvido para colocar em prática o aprendizado do curso Programador BR em JavaScript
 
+## Deploy:
+https://juniormacedo91.github.io/todo-list/
+
 ## Descrição:
 A principal função é registrar uma lista de afazeres do dia a dia. Contudo, busquei ir mais além e inserir novas ferramentas como: uma tela inicial de login, inserir foto e botão dark mode.
 
@@ -40,5 +43,3 @@ Como adendo, criei uma função dark mode. E para atualizar em todas as páginas
 [![JavaScript](https://img.shields.io/badge/javascript-yellow?style=for-the-badge&logo=javascript&labelColor=black)](https://github.com/JuniorMacedo91)
 [![Figma](https://img.shields.io/badge/figma-teal?style=for-the-badge&logo=figma&labelColor=black)](https://github.com/JuniorMacedo91)
 
-## Site:
-https://juniormacedo91.github.io/todo-list/
