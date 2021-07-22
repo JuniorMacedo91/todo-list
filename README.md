@@ -4,6 +4,12 @@ Criação de uma To do List. Projeto desenvolvido para colocar em prática o apr
 ## Deploy:
 https://juniormacedo91.github.io/todo-list/
 
+## Projeto:
+
+<p align="center">
+  <img src="todolist.gif" width="500px">
+</p>
+
 ## Descrição:
 A principal função é registrar uma lista de afazeres do dia a dia. Contudo, busquei ir mais além e inserir novas ferramentas como: uma tela inicial de login, inserir foto e botão dark mode.
 
@@ -29,12 +35,6 @@ Como adendo, criei uma função dark mode. E para atualizar em todas as páginas
 - Identificar um valor especifico em um array;
 - Resgatar e aplicar os valores de localStorage como, foto e nome, em outra página;
 - Entender e criar a lógica para aplicar dark mode em diversas páginas;
-
-## Projeto:
-
-<p align="center">
-  <img src="todolist.gif" width="500px">
-</p>
 
 ## Tecnologias:
 
